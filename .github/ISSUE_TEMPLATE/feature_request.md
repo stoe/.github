@@ -1,9 +1,9 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: "Feature request"
+about: "Suggest an idea for this project"
 title: "Feature request: [PLEASE DESCRIBE]"
 labels: ":construction: feature-request"
-assignees: 
+assignees: ""
 ---
 
 **Is your feature request related to a problem? Please describe.**
