@@ -1,10 +1,10 @@
-## Summary
+## 📝 Summary
+
 copilot:summary
 
-## Details
+## 🔍 Details
+
 copilot:walkthrough
 
-## Changes
-- 
+## 🔗 Related Issues
 
-Fixes #
