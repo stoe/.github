@@ -1,20 +1,39 @@
 ---
-name: Feature request
+name: Feature Request
 about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
+title: "🚧  "
+labels: "feature-request :construction:"
+assignees: stoe
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## Description
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+A clear and concise description of what you would like to happen.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Problem Statement
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+Is your feature request related to a problem? Please describe the problem:
+
+## Proposed Solution
+
+Describe the solution or feature you'd like to see implemented:
+
+## Alternative Solutions
+
+Have you considered alternative approaches or solutions?
+
+## Use Case
+
+Describe a use case where this feature would be helpful:
+
+## Example
+
+If applicable, provide example input/output or code:
+
+```
+Example here
+```
+
+## Additional Context
+
+Add any other context, mockups, or references here.
