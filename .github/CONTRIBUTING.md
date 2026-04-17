@@ -1,54 +1,116 @@
 # Contributing
 
-:wave: Hi there!
-We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great.
+Thanks for your interest in contributing. This guide explains how to contribute effectively and securely.
 
-## Submitting a pull request
+## Code of Conduct
 
-Pull Requests are used for adding new playbooks, roles, and documents to the repository, or editing the existing ones.
+By participating in this project, you agree to follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
+Please report unacceptable behavior to [github@stoelzle.me](mailto:github@stoelzle.me).
 
-**With write access**
+For more guidance on healthy open source collaboration, see GitHub's communities documentation:
+https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions
 
-1. Clone the repository (only if you do not have write access)
-1. Create a new branch: `git checkout -b my-branch-name`
-1. Make your change
-1. Push and [submit a pull request]
-1. Pat yourself on the back and wait for your pull request to be reviewed and merged.
+## How to Contribute
 
-**Without write access**
+### Reporting Bugs
 
-1. Fork and clone the repository
-2. Create a new branch: `git checkout -b my-branch-name`
-3. Make your change
-4. Push to your fork and submit a pull request
-5. Pat your self on the back and wait for your pull request to be reviewed and merged.
+Before opening a bug report, check existing issues to avoid duplicates.
+Use the bug report template in [.github/ISSUE_TEMPLATE/bug_report.md](./ISSUE_TEMPLATE/bug_report.md).
 
-Here are a few things you can do that will increase the likelihood of your pull request being accepted:
+Include:
 
-- Keep your change as focused as possible. If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.
-- Write a [good commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
-- Extra ✨ sparkles if you write a [Gitmoji](https://gitmoji.dev/specification) commit message.<br/>
-  Example: "🐛 Fix `onClick` event handler", ":bug: Fix `onClick` event handler"
-  - **intention**: The intention you want to express with the commit, using an emoji from the [list](https://gitmoji.dev/). Either in the :shortcode: or unicode format.
-  - **message**: A brief explanation of the change.
+- A clear and descriptive title
+- Steps to reproduce
+- Expected behavior and actual behavior
+- Relevant logs, screenshots, or output
+- Environment details (OS, runtime version, tooling)
 
+### Suggesting Enhancements
 
-[Draft pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) are also welcome to get feedback early on, or if there is something blocking you.
+Use the feature request template in [.github/ISSUE_TEMPLATE/feature_request.md](./ISSUE_TEMPLATE/feature_request.md).
 
-- Create a branch with a name that identifies the user and nature of the changes (similar to `user/branch-purpose`)
-- Open a pull request and request a review from the [CODEOWNERS][CODEOWNERS]
+Include:
 
-## Releasing
+- The problem you want to solve
+- The proposed solution
+- Alternatives you considered
+- Any examples or references that clarify the request
 
-If you are the current maintainer of this repository:
+### Pull Requests
 
-1. Create a [Tag](https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository)
-2. Draft [Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) document explaining details of Release
-3. Look for approval from [CODEOWNERS][CODEOWNERS]
+Follow these steps:
 
-## Resources
+1. Fork the repository and create a branch.
+2. Make focused, well-scoped changes.
+3. Run relevant tests and checks locally.
+4. Commit your changes with a descriptive message.
+5. Open a pull request using [PULL_REQUEST_TEMPLATE.md](./PULL_REQUEST_TEMPLATE.md).
 
-- [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
-- [Using Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+All pull requests should include tests or rationale for why tests are not required.
+If behavior changes, update documentation in the same pull request.
 
-[CODEOWNERS]: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#### Labels
+
+Please add one or more repository labels to your pull request.
+Common examples include:
+
+- `bug :bug:`
+- `feature-request :construction:`
+- `dependency :robot:`
+- `github-action :robot:`
+- `help wanted :hand:`
+- `wontfix :no_entry:` (if the pull request closes as not planned)
+
+#### Commit Signing Requirement
+
+All commits must be signed with a verified signature.
+
+- GPG signing: https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits
+- SSH signing: https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits-with-ssh-key
+
+Pull requests with unsigned commits may be asked to update commit history before merge.
+
+#### Commit Message Guidance
+
+Gitmoji-style commit messages are welcome:
+
+- Format: `<emoji> <description>`
+- Example: `🐛 Fix pagination handling for API responses`
+
+Common emojis:
+
+- ✨ `:sparkles:` for new features
+- 🐛 `:bug:` for bug fixes
+- 📝 `:memo:` for documentation updates
+- 🎨 `:art:` for code style and structure improvements
+- ♻️ `:recycle:` for code refactoring
+- ✅ `:white_check_mark:` for tests
+- 🔧 `:wrench:` for configuration changes
+
+Keep descriptions concise and use imperative, present tense.
+
+## Testing
+
+- All new features should include corresponding tests.
+- Run the test suite before submitting a pull request.
+- Ensure your changes do not break existing functionality.
+- If you are fixing a bug, consider adding a test that would have caught it.
+
+## Documentation
+
+- Update the README.md with any necessary changes.
+- Document new features, options, or behavior changes.
+- Consider updating examples if relevant.
+- Use a conversational tone that matches existing documentation.
+- For command examples, use the format shown in the README (for example, `my-org/my-repo` for repository names).
+
+## Review Process
+
+- All submissions require review.
+- You may be asked to make changes before your pull request is accepted.
+- Once approved, your pull request will be merged by a maintainer.
+
+## Additional Resources
+
+- https://docs.github.com/en/pull-requests
+- https://opensource.guide/how-to-contribute/
