@@ -1,0 +1,16 @@
+name: "Stoe APM Policy"
+version: "0.1.0"
+enforcement: warn
+
+dependencies:
+  allow:
+    - "stoe/**"
+  max_depth: 5
+
+mcp:
+  self_defined: warn
+
+manifest:
+  required_fields:
+    - version
+    - description
